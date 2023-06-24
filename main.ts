@@ -24,3 +24,4 @@ configs.forEach(async (config) => {
 });
 
 console.log('Done!');
+Deno.exit(0);
