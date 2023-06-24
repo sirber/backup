@@ -18,6 +18,7 @@ try {
 
 const configs: ConfigInterface[] = JSON.parse(await Deno.readTextFile("./config.json"));
 
+// Backup!
 configs.forEach(async (config) => {
     console.log('Backup of: ' + config.name);
     await zip.zip(config.sourcePath, config.destination);
