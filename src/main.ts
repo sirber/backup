@@ -1,4 +1,4 @@
-import { zip } from "npm:zip-a-folder@3.1.6";
+import { zip } from "npm:zip-a-folder@3.1.8";
 import { ConfigInterface } from "./config.interface.ts";
 
 console.log("Backup v0.0.2");
