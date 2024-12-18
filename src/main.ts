@@ -23,6 +23,9 @@ const configs: ConfigInterface[] = JSON.parse(
 // Backup!
 configs.forEach(async (config) => {
   console.log("Backup of: " + config.name);
+  console.log("Source: " + config.sourcePath);
+  console.log("Destination: " + config.destination);
+
   await zip(config.sourcePath, config.destination);
 });
 
