@@ -4,7 +4,7 @@
 
 Create a `config.json` file with the folders you want to backup.
 
-Exemple:
+## Exemple for Linux / Mac
 ```json 
 [
     {
@@ -14,6 +14,19 @@ Exemple:
     }
 ]
 ```
+
+## Exemple for Windows
+```json 
+[
+    {
+        "name": "Photos",
+        "sourcePath": "P:\\Photos\\photos_perso",
+        "destination": "E:\\Backups\\Photos\\photos_perso.zip"
+    }
+]
+```
+
+
 
 then run the app!
 
