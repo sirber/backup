@@ -1,7 +1,7 @@
 import { zip } from "npm:zip-a-folder@3.1.8";
 import { ConfigInterface } from "./config.interface.ts";
 
-console.log("Backup v0.0.3");
+console.log("Backup v0.1.0");
 
 // Config
 const confFile = "./config.json";
@@ -21,13 +21,13 @@ const configs: ConfigInterface[] = JSON.parse(
 );
 
 // Backup!
-configs.forEach(async (config) => {
+for (const config of configs) {
   console.log("Backup of: " + config.name);
   console.log("Source: " + config.sourcePath);
   console.log("Destination: " + config.destination);
 
   await zip(config.sourcePath, config.destination);
-});
+}
 
 console.log("Done!");
 Deno.exit(0);
